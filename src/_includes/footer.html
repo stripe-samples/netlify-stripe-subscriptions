@@ -55,7 +55,7 @@
     background-color: var(--black);
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 770px) {
     .lwj-demo-footer {
       padding-bottom: 0;
       padding-top: 0;
@@ -71,10 +71,15 @@
   <a href="https://www.learnwithjason.dev"
     >Created on <em>Learn With Jason</em></a
   >
-  {% if repo %}<a href="https://github.com/{{ repo }}">View Source Code</a>{%
-  endif %}{% if episode %}<a href="{{ episode }}">Watch This Get Built</a>{%
-  endif %}{% if tutorial %}<a href="{{ tutorial }}">Read the Tutorial</a>{%
-  endif %}
+  {% if episode %}<a href="{{ episode }}">Watch It Get Built</a>{% endif %}{% if
+  tutorial %}<a href="{{ tutorial }}">Tutorial</a>{% endif %}{% if repo %}<a
+    href="https://github.com/{{ repo }}"
+    >Source Code</a
+  >
+  <a
+    href="http://app.netlify.com/start/deploy?repository=https://github.com/{{ repo }}?utm_source=learnwithjason&utm_medium=lwj-demo-footer-jl&utm_campaign=devex"
+    >Deploy Your Own Copy</a
+  >{% endif %}
 
   <div class="bottom-bar"></div>
 </footer>
