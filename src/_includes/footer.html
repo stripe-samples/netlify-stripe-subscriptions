@@ -1,14 +1,80 @@
-<style></style>
+<style>
+  .lwj-demo-footer {
+    background: var(--black);
+    color: var(--text-muted);
+    font-family: var(--font-family);
+    padding: 1rem 5vw;
+    position: relative;
+    text-align: center;
+  }
 
-<footer>
+  .lwj-demo-footer a {
+    color: inherit;
+    display: block;
+    font-size: 0.75rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+  }
+
+  .lwj-demo-footer a:active,
+  .lwj-demo-footer a:focus,
+  .lwj-demo-footer a:hover {
+    color: var(--pink-text);
+  }
+
+  .lwj-demo-footer .bottom-bar {
+    animation: gradient-roll 20s linear infinite alternate;
+    background-image: var(--lwj-gradient);
+    background-size: 200%;
+    border-bottom: 0.5px solid var(--light-gray);
+    height: 5px;
+    position: absolute;
+    bottom: 100%;
+    width: 100vw;
+    z-index: 5;
+  }
+
+  .lwj-demo-footer .bottom-bar::before,
+  .lwj-demo-footer .bottom-bar::after {
+    content: '';
+    position: absolute;
+    left: -5vw;
+    width: 100vw;
+  }
+
+  .lwj-demo-footer .bottom-bar::before {
+    top: 1px;
+    height: 0.5px;
+    background-color: var(--light-gray);
+  }
+
+  .lwj-demo-footer .bottom-bar::after {
+    top: 0;
+    height: 1px;
+    background-color: var(--black);
+  }
+
+  @media (min-width: 700px) {
+    .lwj-demo-footer {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    .lwj-demo-footer a {
+      display: inline-block;
+    }
+  }
+</style>
+
+<footer class="lwj-demo-footer">
   <a href="https://www.learnwithjason.dev"
     >Created on <em>Learn With Jason</em></a
   >
-  {% if repo %}<a href="https://github.com/{{ repo }}">View Source Code</a> · {%
-  endif %} {% if episode %}<a
-    href="https://www.learnwithjason.dev/{{ episode }}"
-    >Watch This Get Built</a
-  >
-  · {% endif %} {% if tutorial %}<a href="{{ tutorial }}">Read the Tutorial</a
-  >{% endif %}
+  {% if repo %}<a href="https://github.com/{{ repo }}">View Source Code</a>{%
+  endif %}{% if episode %}<a href="{{ episode }}">Watch This Get Built</a>{%
+  endif %}{% if tutorial %}<a href="{{ tutorial }}">Read the Tutorial</a>{%
+  endif %}
+
+  <div class="bottom-bar"></div>
 </footer>

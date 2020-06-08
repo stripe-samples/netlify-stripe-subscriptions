@@ -1,3 +1,28 @@
+:root {
+  --pink: #d459ab;
+  --pink-text: #dd78bc; /* lightened up to meet a11y guidelines */
+  --yellow: #ffdf37;
+  --blue: #a6fffa;
+  --light-gray: #e0e0e0;
+  --dark-gray: #1a2a3b;
+  --black: #011627;
+  --black-transparent: #01162700;
+  --white: white;
+  --lwj-gradient: linear-gradient(
+    90deg,
+    var(--pink) 0%,
+    var(--yellow) 25%,
+    var(--blue) 50%,
+    var(--yellow) 75%,
+    var(--pink) 100%
+  );
+  --text: var(--white);
+  --text-muted: #bdbdbd;
+  --font-family: mallory, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,5 +43,16 @@ body {
 main {
   margin: 4rem auto;
   max-width: 640px;
+  min-height: calc(100vh - 242px);
   width: 90vw;
+}
+
+@keyframes gradient-roll {
+  0% {
+    background-position: -100vw 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
