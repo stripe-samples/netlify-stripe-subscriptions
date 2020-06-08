@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: white;
+  font-family: mallory, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  margin: 4rem auto;
+  max-width: 640px;
+  width: 90vw;
+}

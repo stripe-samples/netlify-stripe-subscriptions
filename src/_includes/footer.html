@@ -1,0 +1,14 @@
+<style></style>
+
+<footer>
+  <a href="https://www.learnwithjason.dev"
+    >Created on <em>Learn With Jason</em></a
+  >
+  {% if repo %}<a href="https://github.com/{{ repo }}">View Source Code</a> · {%
+  endif %} {% if episode %}<a
+    href="https://www.learnwithjason.dev/{{ episode }}"
+    >Watch This Get Built</a
+  >
+  · {% endif %} {% if tutorial %}<a href="{{ tutorial }}">Read the Tutorial</a
+  >{% endif %}
+</footer>

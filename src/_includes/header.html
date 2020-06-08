@@ -1,0 +1,178 @@
+<style>
+  .lwj-demo-header {
+    --pink: #d459ab;
+    --pink-text: #dd78bc; /* lightened up to meet a11y guidelines */
+    --yellow: #ffdf37;
+    --blue: #a6fffa;
+    --light-gray: #e0e0e0;
+    --dark-gray: #1a2a3b;
+    --black: #011627;
+    --black-transparent: #01162700;
+    --white: white;
+    --lwj-gradient: linear-gradient(
+      90deg,
+      var(--pink) 0%,
+      var(--yellow) 25%,
+      var(--blue) 50%,
+      var(--yellow) 75%,
+      var(--pink) 100%
+    );
+    --text: var(--white);
+    --text-muted: #bdbdbd;
+    --font-family: mallory, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+      'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    background: var(--black);
+    font-family: var(--font-family);
+    position: relative;
+  }
+
+  .logo-wrapper {
+    align-items: center;
+    display: flex;
+    height: 56px;
+    justify-content: flex-start;
+    padding: 0 1rem;
+    position: relative;
+    width: 300px;
+  }
+
+  .logo-wrapper::after {
+    background-image: linear-gradient(
+      255deg,
+      var(--black) 0%,
+      var(--black-transparent) 30%
+    );
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .logo {
+    display: block;
+    height: auto;
+    position: relative;
+    transform: rotate(-3deg);
+    transition: transform 250ms ease-out;
+    width: 55px;
+    z-index: 15;
+  }
+
+  .logo::after {
+    background: var(--white);
+    border: 1px solid var(--dark-gray);
+    border-radius: 0.25rem;
+    color: var(--dark-gray);
+    content: 'Check out Learn With Jason!';
+    display: block;
+    left: -0.5rem;
+    opacity: 0;
+    padding: 0.5rem;
+    position: absolute;
+    text-align: center;
+    top: 98%;
+    transition: opacity 300ms linear;
+    width: 230px;
+  }
+
+  .logo:active,
+  .logo:focus,
+  .logo:hover {
+    transform: rotate(0deg);
+  }
+
+  .logo:active::after,
+  .logo:focus::after,
+  .logo:hover::after {
+    opacity: 1;
+  }
+
+  .logo img {
+    display: block;
+    width: 100%;
+  }
+
+  .home-link {
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-left: 0.75rem;
+    position: relative;
+    text-decoration: none;
+    z-index: 15;
+  }
+
+  #canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .top-bar {
+    animation: gradient-roll 20s linear infinite alternate;
+    background-image: var(--lwj-gradient);
+    background-size: 200%;
+    border-bottom: 0.5px solid var(--light-gray);
+    height: 9px;
+    position: relative;
+    top: 100%;
+    width: 100vw;
+    z-index: 5;
+  }
+
+  .top-bar::before,
+  .top-bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100vw;
+  }
+
+  .top-bar::before {
+    bottom: 2px;
+    height: 0.5px;
+    background-color: var(--light-gray);
+  }
+
+  .top-bar::after {
+    bottom: 0;
+    height: 2px;
+    background-color: var(--black);
+  }
+
+  @keyframes gradient-roll {
+    0% {
+      background-position: -100vw 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+</style>
+
+<header class="lwj-demo-header">
+  <div class="logo-wrapper">
+    <canvas id="canvas" width="300" height="56"></canvas>
+    <a href="https://www.learnwithjason.dev" class="logo"
+      ><img src="/images/learn-with-jason-dark.svg" alt="Learn With Jason"
+    /></a>
+    <a href="/" rel="home" class="home-link">
+      {{ title }}
+    </a>
+  </div>
+
+  <div class="top-bar"></div>
+</header>
+
+<script type="module">
+  import { startAnimation } from '/js/dots.js';
+
+  startAnimation();
+</script>
