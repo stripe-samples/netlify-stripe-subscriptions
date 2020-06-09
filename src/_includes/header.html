@@ -5,7 +5,7 @@
     position: relative;
   }
 
-  .logo-wrapper {
+  .lwj-demo-header .logo-wrapper {
     align-items: center;
     display: flex;
     height: 56px;
@@ -15,7 +15,7 @@
     width: 100vw;
   }
 
-  .logo-wrapper::after {
+  .lwj-demo-header .logo-wrapper::after {
     background-image: linear-gradient(
       255deg,
       var(--black) 0%,
@@ -31,7 +31,7 @@
     z-index: 10;
   }
 
-  .logo {
+  .lwj-demo-header .logo {
     display: block;
     height: auto;
     position: relative;
@@ -41,7 +41,7 @@
     z-index: 15;
   }
 
-  .logo::after {
+  .lwj-demo-header .logo::after {
     background: var(--white);
     border: 1px solid var(--dark-gray);
     border-radius: 0.25rem;
@@ -58,24 +58,24 @@
     width: 230px;
   }
 
-  .logo:active,
-  .logo:focus,
-  .logo:hover {
+  .lwj-demo-header .logo:active,
+  .lwj-demo-header .logo:focus,
+  .lwj-demo-header .logo:hover {
     transform: rotate(0deg);
   }
 
-  .logo:active::after,
-  .logo:focus::after,
-  .logo:hover::after {
+  .lwj-demo-header .logo:active::after,
+  .lwj-demo-header .logo:focus::after,
+  .lwj-demo-header .logo:hover::after {
     opacity: 1;
   }
 
-  .logo img {
+  .lwj-demo-header .logo img {
     display: block;
     width: 100%;
   }
 
-  .home-link {
+  .lwj-demo-header .home-link {
     color: var(--white);
     font-size: 1rem;
     font-weight: 900;
@@ -85,13 +85,13 @@
     z-index: 15;
   }
 
-  #canvas {
+  .lwj-demo-header #canvas {
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  .top-bar {
+  .lwj-demo-header .top-bar {
     animation: gradient-roll 20s linear infinite alternate;
     background-image: var(--lwj-gradient);
     background-size: 200%;
@@ -103,21 +103,21 @@
     z-index: 5;
   }
 
-  .top-bar::before,
-  .top-bar::after {
+  .lwj-demo-header .top-bar::before,
+  .lwj-demo-header .top-bar::after {
     content: '';
     position: absolute;
     left: 0;
     width: 100vw;
   }
 
-  .top-bar::before {
+  .lwj-demo-header .top-bar::before {
     bottom: 1px;
     height: 0.5px;
     background-color: var(--light-gray);
   }
 
-  .top-bar::after {
+  .lwj-demo-header .top-bar::after {
     bottom: 0;
     height: 1px;
     background-color: var(--black);
