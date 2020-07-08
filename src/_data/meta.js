@@ -3,8 +3,9 @@ module.exports = {
   title: 'Stripe Subscriptions',
 
   // these are all optional and add links to the footer
-  // repo: 'learnwithjason/demo-base',
-  // episode:
-  //   'https://www.learnwithjason.dev/creating-css-variable-font-text-effects',
-  // tutorial: 'https://codepen.io/jlengstorf/pen/QWbdLjb',
+  repo: 'learnwithjason/stripe-subscriptions',
+  episode:
+    'https://www.learnwithjason.dev/subscription-management-in-jamstack-apps',
+  tutorial:
+    'https://www.netlify.com/blog/2020/07/13/learn-how-to-add-subscriptions-and-protected-content-with-stripe/?utm_source=demo-footer&utm_medium=stripe-subs-jl&utm_campaign=devex',
 };
