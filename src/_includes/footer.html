@@ -28,9 +28,10 @@
     background-image: var(--lwj-gradient);
     background-size: 200%;
     border-bottom: 0.5px solid var(--light-gray);
-    height: 5px;
-    position: absolute;
     bottom: 100%;
+    height: 6px;
+    left: 0;
+    position: absolute;
     width: 100vw;
     z-index: 5;
   }
@@ -39,7 +40,7 @@
   .lwj-demo-footer .bottom-bar::after {
     content: '';
     position: absolute;
-    left: -5vw;
+    left: 0;
     width: 100vw;
   }
 
@@ -71,13 +72,13 @@
   <a href="https://www.learnwithjason.dev"
     >Created on <em>Learn With Jason</em></a
   >
-  {% if episode %}<a href="{{ episode }}">Watch It Get Built</a>{% endif %}{% if
-  tutorial %}<a href="{{ tutorial }}">Tutorial</a>{% endif %}{% if repo %}<a
-    href="https://github.com/{{ repo }}"
+  {% if meta.episode %}<a href="{{ meta.episode }}">Watch It Get Built</a>{%
+  endif %}{% if meta.tutorial %}<a href="{{ meta.tutorial }}">Tutorial</a>{%
+  endif %}{% if meta.repo %}<a href="https://github.com/{{ meta.repo }}"
     >Source Code</a
   >
   <a
-    href="http://app.netlify.com/start/deploy?repository=https://github.com/{{ repo }}?utm_source=learnwithjason&utm_medium=lwj-demo-footer-jl&utm_campaign=devex"
+    href="http://app.netlify.com/start/deploy?repository=https://github.com/{{ meta.repo }}?utm_source=learnwithjason&utm_medium=lwj-demo-footer-jl&utm_campaign=devex"
     >Deploy Your Own Copy</a
   >{% endif %}
 
