@@ -84,7 +84,7 @@
 
 <script
   type="text/javascript"
-  src="https://unpkg.com/netlify-identity-widget@1.8.1-beta.0/build/netlify-identity-widget.js"
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
 ></script>
 
 <script>
@@ -117,6 +117,17 @@
       b2.innerText = 'Manage Subscription';
       b2.addEventListener('click', () => {
         // TODO handle subscription management
+        fetch('/.netlify/functions/create-manage-link', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${user.token.access_token}`,
+          },
+        })
+          .then((res) => res.json())
+          .then((link) => {
+            window.location.href = link;
+          })
+          .catch((err) => console.error(err));
       });
     } else {
       // if no one is logged in, show login/signup options
