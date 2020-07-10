@@ -3,7 +3,7 @@ module.exports = {
   title: 'Stripe Subscriptions',
 
   // these are all optional and add links to the footer
-  repo: 'learnwithjason/stripe-subscriptions',
+  repo: 'stripe-samples/netlify-stripe-subscriptions',
   episode:
     'https://www.learnwithjason.dev/subscription-management-in-jamstack-apps',
   tutorial:
