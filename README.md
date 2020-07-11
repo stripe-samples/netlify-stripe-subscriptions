@@ -13,7 +13,7 @@
   But don’t worry! You can still: 
   <a href="https://www.learnwithjason.dev/subscription-management-in-jamstack-apps"><strong>watch the video</strong></a> · 
   <a href="https://stripe-subscriptions.netlify.app"><strong>see the demo</strong></a> · 
-  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/learnwithjason/stripe-subscriptions&utm_source=learnwithjason&utm_medium=github&utm_campaign=devex"><strong>deploy this project</strong></a> · 
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/stripe-samples/stripe-subscriptions&utm_source=learnwithjason&utm_medium=github&utm_campaign=devex"><strong>deploy this project</strong></a> · 
   <a href="https://jason.af/lwj/schedule"><strong>see upcoming episodes</strong></a>
 </p>
 
@@ -31,7 +31,7 @@ Subscriptions power most web-based businesses. In this episode, Thor 雷神 teac
 
 &nbsp;
 <p align="center">
-  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/learnwithjason/stripe-subscriptions&utm_source=learnwithjason&utm_medium=github&utm_campaign=devex">
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/stripe-samples/stripe-subscriptions&utm_source=learnwithjason&utm_medium=github&utm_campaign=devex">
     <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy this project to Netlify" />
   </a>
 </p>
