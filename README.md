@@ -17,9 +17,23 @@
   <a href="https://jason.af/lwj/schedule"><strong>see upcoming episodes</strong></a>
 </p>
 
-&nbsp;
+<p align="center">
+  <img
+    src="https://res.cloudinary.com/jlengstorf/video/upload/vs_0.2s,dl_200,eo_33,e_loop,w_500/v1594235401/netlify/blog/stripe-subscriptions/role-change.gif"
+    alt="The workflow of changing subscription levels."
+  />
+</p>
 
-Subscriptions power most web-based businesses. In this episode, Thor 雷神 teaches us how to let customers purchase & manage subscriptions with Stripe in JAMstack apps.
+A full-fledged subscription management with content gated based on subscription level using:
+
+- Stripe’s Billing customer portal for payment
+- Netlify Identity
+- Fauna
+- serverless functions
+
+### ➡️ [Learn how to build this demo in an in-depth tutorial!](https://www.netlify.com/blog/2020/07/13/manage-subscriptions-and-protect-content-with-stripe/?utm_source=github&utm_medium=stripe-subs-jl&utm_campaign=devex) 👀
+
+Companies at every size need to make money to survive. Learn how to manage user subscriptions and paywall content in this in-depth tutorial!
 
 &nbsp;
 
