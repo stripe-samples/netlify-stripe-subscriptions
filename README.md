@@ -31,7 +31,7 @@ Subscriptions power most web-based businesses. In this episode, Thor 雷神 teac
 
 &nbsp;
 <p align="center">
-  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/stripe-samples/stripe-subscriptions&utm_source=learnwithjason&utm_medium=github&utm_campaign=devex">
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/stripe-samples/netlify-stripe-subscriptions&utm_source=learnwithjason&utm_medium=github&utm_campaign=devex">
     <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy this project to Netlify" />
   </a>
 </p>
